@@ -37,11 +37,12 @@ namespace Calculator
             this.txtKQ = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btTru = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bttinh
             // 
-            this.bttinh.Location = new System.Drawing.Point(223, 268);
+            this.bttinh.Location = new System.Drawing.Point(333, 258);
             this.bttinh.Name = "bttinh";
             this.bttinh.Size = new System.Drawing.Size(75, 50);
             this.bttinh.TabIndex = 0;
@@ -99,19 +100,27 @@ namespace Calculator
             // 
             // btTru
             // 
-            this.btTru.Location = new System.Drawing.Point(335, 268);
+            this.btTru.Location = new System.Drawing.Point(0, 0);
             this.btTru.Name = "btTru";
-            this.btTru.Size = new System.Drawing.Size(75, 50);
-            this.btTru.TabIndex = 0;
-            this.btTru.Text = "Trừ";
-            this.btTru.UseVisualStyleBackColor = true;
-            this.btTru.ClientSizeChanged += new System.EventHandler(this.btTru_ClientSizeChanged);
+            this.btTru.Size = new System.Drawing.Size(75, 23);
+            this.btTru.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(241, 258);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 50);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Tru";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -137,6 +146,7 @@ namespace Calculator
         private System.Windows.Forms.TextBox txtKQ;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btTru;
+        private System.Windows.Forms.Button button1;
     }
 }
 
